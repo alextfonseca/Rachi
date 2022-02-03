@@ -17,8 +17,8 @@ Para instalar o projeto, siga estas etapas:
 Linux e macOS:
 
 ```bash
-$ git clone https://github.com/alextfonseca/Kenai.git
-$ cd Kenai
+$ git clone https://github.com/alextfonseca/Rachi.git
+$ cd Rachi
 $ yarn / npm i
 $ yarn start / npm run start
 ```
@@ -26,8 +26,8 @@ $ yarn start / npm run start
 Windows:
 
 ```bash
-$ git clone https://github.com/alextfonseca/Kenai.git
-$ cd Kenai
+$ git clone https://github.com/alextfonseca/Rachi.git
+$ cd Rachi
 $ yarn / npm i
 $ yarn start / npm run start
 ```
