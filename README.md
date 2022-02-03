@@ -34,7 +34,7 @@ $ yarn start / npm run start
 
 ## 🧾 Usando o projeto
 
-# <a href="https://kenai-mu.vercel.app/">Acesse o projeto</a>
+# <a href="https://rachi-pi.vercel.app/">Acesse o projeto</a>
 
 ## 🧑‍💻 Criador
 
