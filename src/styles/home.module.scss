@@ -1,0 +1,181 @@
+// import responsive
+@import "responsive.scss";
+
+// geral
+.container {
+  width: min(90%, 1120rem);
+  margin: auto;
+}
+
+.introduction {
+  background: var(--white-200);
+  width: 100%;
+
+  padding-top: 2rem;
+
+  .container {
+    height: 100vh;
+    padding: 3rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+
+    .about {
+      h1 {
+        font-family: "Sara", sans-serif;
+        font-weight: 600;
+        font-size: 3rem;
+        color: var(--gray-200);
+      }
+
+      button {
+        margin-top: 3rem;
+        border: none;
+        background: var(--blue);
+        color: var(--white);
+        padding: 1rem 2rem;
+        border-radius: 3rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    .illustration {
+      img {
+        max-width: 100%;
+        min-width: 20rem;
+      }
+    }
+  }
+}
+
+.aboutApp {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+
+  .cards {
+    margin-top: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
+.app {
+  background: var(--white-200);
+  padding: 3rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .download {
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        color: var(--gray);
+        max-width: 70%;
+        line-height: 1.75rem;
+      }
+
+      .downloadButtons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.plans {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+
+  .container {
+    .subtitle {
+      margin: 1rem auto;
+      max-width: 80%;
+    }
+
+    .plansCards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+}
+
+.contact {
+  padding: 3rem;
+
+  width: 100%;
+  height: 400px;
+  background: url("../../public/images/contactBackground.png");
+  background-size: cover;
+  background-position: center;
+
+  h2 {
+    color: var(--white);
+  }
+
+  .subtitle {
+    color: var(--white);
+    text-align: center;
+    max-width: 50%;
+    margin: 1rem auto;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    margin: 6rem;
+
+    input {
+      border: none;
+      border-bottom: 3px solid var(--white);
+      background: transparent;
+      color: var(--white);
+      font-size: 1.125rem;
+
+      &::placeholder {
+        color: var(--white);
+        font-size: 1.125rem;
+      }
+    }
+
+    button {
+      background: var(--blue);
+      color: var(--white);
+      font-size: 1.125rem;
+
+      border: none;
+
+      padding: 0.5rem 2rem;
+      border-radius: 10rem;
+    }
+  }
+}
+
+footer {
+  p {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Sora", sans-serif;
+  }
+}

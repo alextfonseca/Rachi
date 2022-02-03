@@ -1,0 +1,146 @@
+.header {
+  width: 100%;
+  padding: 2rem 0;
+
+  position: fixed;
+  background: var(--white);
+
+  .container {
+    width: min(90%, 1120rem);
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      gap: 2rem;
+
+      .closeMenuButton {
+        display: none;
+      }
+
+      li {
+        color: var(--gray);
+        font-size: 1.125rem;
+        font-weight: 500;
+
+        transition: 0.3s;
+
+        &:hover {
+          color: var(--blue);
+        }
+      }
+    }
+
+    .menuButton {
+      display: none;
+      border: none;
+      background: none;
+
+      width: 30px;
+      border-top: 3px solid var(--blue);
+      color: var(--blue);
+
+      &::after,
+      &:before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    .container {
+      ul {
+        display: none;
+
+        &.active {
+          animation: openMenu 0.7s;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          background: var(--blue);
+
+          width: 100vw;
+          height: 100vh;
+
+          .closeMenuButton {
+            display: block;
+            border: none;
+            background: none;
+
+            position: absolute;
+            top: 5%;
+            right: 5%;
+
+            &::after,
+            &:before {
+              content: "";
+              display: block;
+              width: 30px;
+              height: 3px;
+              background: var(--white);
+              margin-top: 5px;
+              transition: 0.3s;
+              position: relative;
+              animation: 0.5s;
+              transform: rotate(0deg);
+            }
+
+            &:before {
+              transform: rotate(135deg);
+            }
+
+            &:after {
+              transform: rotate(-135deg);
+              top: -7px;
+            }
+          }
+
+          li {
+            color: var(--white);
+            text-align: center;
+
+            font-size: 2.5rem;
+
+            transition: filter 0.3s;
+
+            &:hover {
+              filter: brightness(0.8);
+            }
+          }
+        }
+      }
+
+      .menuButton {
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes openMenu {
+  to {
+    height: 100vh;
+  }
+
+  from {
+    height: 0;
+  }
+}

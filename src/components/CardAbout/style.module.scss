@@ -1,0 +1,19 @@
+.container {
+  .content {
+    margin-top: 2rem;
+
+    p {
+      font-size: 1.125rem;
+      font-weight: 600;
+      font-family: "Sora", sans-serif;
+    }
+
+    span {
+      display: block;
+      margin: 1rem auto;
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 80%;
+    }
+  }
+}

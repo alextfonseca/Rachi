@@ -1,0 +1,115 @@
+// ------  responsive  ------
+
+//introduction
+@media only screen and (max-width: 730px) {
+  .introduction {
+    .about {
+      h1 {
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .illustration {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+//about app
+@media only screen and (max-width: 600px) {
+  .aboutApp {
+    .cards {
+      margin-top: 4rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+}
+
+// app
+@media only screen and (max-width: 930px) {
+  .app {
+    .download {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+    }
+
+    .illustration {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .app {
+    .downloadButtons {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+//plans
+@media only screen and (max-width: 1040px) {
+  .plans {
+    .plansCards {
+      display: flex;
+      flex-direction: column;
+
+      gap: 2rem;
+
+      max-width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+//plans
+@media only screen and (max-width: 570px) {
+  .plans {
+    .container {
+      .subtitle {
+        display: inline-block;
+      }
+
+      .plansCards {
+        flex-direction: column;
+
+        max-width: 100%;
+        margin: 2rem auto;
+      }
+    }
+  }
+}
+
+//contact
+@media only screen and (max-width: 570px) {
+  .contact {
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .subtitle {
+      display: inline;
+    }
+
+    .form {
+      flex-direction: column;
+    }
+  }
+}
